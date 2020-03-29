@@ -3,6 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+const firebase = require('firebase');
+require('firebase/firestore');
+firebase.initializeApp({
+  apiKey: "YOUR API KEY",
+  authDomain: "YOUR AUTH DOMAIN",
+  databaseURL: "YOUR DATABASE URL",
+  projectId: "YOUR PROJECT ID",
+  storageBucket: "YOUR STORAGE BUCKET",
+  messagingSenderId: "YOUR MESSAGING SENDER ID",
+  appId: "YOUR APP ID"
+});
 
 ReactDOM.render(
   <React.StrictMode>
